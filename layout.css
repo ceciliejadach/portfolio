@@ -1,0 +1,176 @@
+@media (min-width: 800px) {
+  /* --------FORSIDE-------- */
+  .marquee h1 {
+    font-size: 30rem;
+  }
+
+  header .container {
+    padding: 20px 30px;
+  }
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+  }
+
+  .about-wrapper a {
+    width: fit-content;
+  }
+
+  .project-headline h1 {
+    font-size: 5rem;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5,
+  .project_6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    min-height: 70vh;
+    align-items: center;
+  }
+
+  .project_2 p,
+  .project_3 p,
+  .project_4 p,
+  .project_5 p,
+  .project_6 p {
+    max-width: 500px;
+  }
+
+  .footer-wrapper {
+    min-height: 70vh;
+  }
+
+  .footer-headline {
+    font-size: 6rem;
+    padding: 30px 40px;
+    margin-top: 70px;
+  }
+
+  .footer-content a {
+    font-size: 2rem;
+  }
+
+  .footer-content a:hover {
+    background: #f9f871;
+    transition: 0.4ms;
+    text-decoration: underline;
+  }
+
+  /* --------PROJEKTER-------- */
+
+  .introduktion-wrapper-2,
+  .introduktion-wrapper-3,
+  .introduktion-wrapper-4,
+  .introduktion-wrapper-5,
+  .introduktion-wrapper-6 {
+    padding-left: 100px;
+  }
+
+  .introduktion-wrapper-2 h1,
+  .introduktion-wrapper-3 h1,
+  .introduktion-wrapper-4 h1,
+  .introduktion-wrapper-5 h1,
+  .introduktion-wrapper-6 h1 {
+    font-size: 4rem;
+  }
+
+  .introduktion-wrapper-2 h3,
+  .introduktion-wrapper-3 h3,
+  .introduktion-wrapper-4 h3,
+  .introduktion-wrapper-5 h3,
+  .introduktion-wrapper-6 h3 {
+    font-size: 2rem;
+  }
+
+  .animation-scroll {
+    margin: 0 200px;
+  }
+
+  .con_1 h1 {
+    font-size: 4rem;
+  }
+
+  .con_2 {
+    margin: 100px 400px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .con_3 {
+    margin: 0px 500px 30px 500px;
+  }
+
+  .div_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 100px;
+  }
+
+  /* --------CV-------- */
+  .col_container {
+    margin: 200px 250px 100px 250px;
+  }
+
+  .column_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .column_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+  }
+
+  .grid_col_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .about {
+    margin-bottom: 40px;
+  }
+
+  .kompetencer {
+    margin-bottom: 40px;
+  }
+
+  .black {
+    color: black;
+  }
+
+  .line {
+    border: 1px solid black;
+  }
+
+  .evne {
+    margin-left: 0px;
+  }
+
+  /* --------PORTFOLIO-------- */
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .grid {
+    min-height: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: transform 0.3s; /*overgangseffekt */
+  }
+
+  .grid:hover {
+    transform: scale(1.02);
+  }
+}

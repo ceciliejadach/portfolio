@@ -1,0 +1,678 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: house;
+  src: url("font/houseofmontaguedemo-webfont.woff");
+  src: url("font/houseofmontaguedemo-webfont.woff2");
+}
+
+h2,
+h3,
+p,
+a,
+.con_3 h1 {
+  font-family: "Inter", sans-serif;
+}
+
+/*-----------NAVIGATION-----------*/
+
+/* Placering af header  */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+/* Kategorierne og logo skal være i hver deres ende */
+header .container {
+  padding: 10px 15px;
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px 0 15px;
+  border-radius: 10px;
+  border: lightgrey 1px solid;
+}
+
+/* Stil af navigations links */
+header .container a {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(2, auto);
+  color: black;
+}
+
+nav a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.logo {
+  font-family: house;
+}
+
+/* Position og stil af hamburger menu */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 100;
+}
+
+/* Stil af hamburger streger */
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+/* Hamburger streger som danner et kryds ved klik */
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+/* Side som slider ind ved klik på hamburger menu */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: white;
+  padding-top: 120px;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+/* Stil af mobil navigation links */
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 10px 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/*-----------FORSIDE-----------*/
+
+/* Stil af hero section  */
+/* body {
+  background-image: url(img/baggrund.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+/* Container til min tekst animation */
+.hero-wrapper .marquee,
+.marquee-wrapper .marquee-2 {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+/* Stil for h1 og animation */
+.marquee h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-family: house;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 4px;
+  animation-name: move;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Keyframe for min tekst animation */
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-figur-container {
+  z-index: 1;
+  width: 55vw;
+  height: 55vw;
+  mix-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: visible;
+}
+
+.about-wrapper {
+  z-index: 1;
+  min-height: 70vh;
+  color: #fff;
+  background-color: #050505;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  margin-top: 100px;
+  padding: 0 15px;
+}
+
+.about-headline {
+  color: white;
+  font-size: 3rem;
+  padding-top: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.about-content p {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.about-wrapper a {
+  text-decoration: none;
+  color: black;
+  background-color: #f9f871;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+}
+
+.project-headline {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: white;
+}
+
+.project-headline h1 {
+  font-size: 3rem;
+  font-family: "Inter", sans-serif;
+}
+
+.project_2 {
+  /* background-color: #ff007d; */
+  background: #f2fedc;
+  color: black;
+  padding: 30px 15px;
+}
+
+.project_3 {
+  background-color: #fbfaf0;
+  color: #050505;
+  padding: 30px 15px;
+}
+
+.project_4 {
+  /* background-color: #002eff; */
+  background-color: #959366;
+  /* color: white; */
+  color: black;
+  padding: 30px 15px;
+}
+
+.project_5 {
+  background-color: #fbfaf0;
+  color: #050505;
+  padding: 30px 15px;
+}
+
+.project_6 {
+  background-color: #f9f871;
+  color: #050505;
+  padding: 30px 15px;
+}
+
+.project_2 h2,
+.project_3 h2,
+.project_4 h2,
+.project_5 h2,
+.project_6 h2 {
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.project_2 p,
+.project_3 p,
+.project_4 p,
+.project_5 p,
+.project_6 p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 2rem;
+}
+
+.project_2 a,
+.project_3 a,
+.project_4 a,
+.project_5 a,
+.project_6 a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: #050505 1px solid;
+  font-size: 1.1rem;
+}
+
+.project_2 a:hover,
+.project_3 a:hover,
+.project_4 a:hover,
+.project_5 a:hover,
+.project_6 a:hover {
+  background: black;
+  color: white;
+}
+
+/*-----------FOOTER-----------*/
+.footer-wrapper {
+  text-align: center;
+  background: black;
+  padding-top: 50px;
+  min-height: 40vh;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.footer-headline {
+  font-family: house;
+  background: white;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.footer-content {
+  margin-top: 70px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px 0px 5px 5px;
+  color: black;
+  margin-left: 20px;
+}
+
+.footer-content a:hover {
+  background: #f9f871;
+  transition: 0.4ms;
+  text-decoration: underline;
+}
+
+/* Stil for h1 og animation */
+.marquee-2 h1 {
+  font-size: 5rem;
+  /* background: white; */
+  background: #f9f871;
+  font-family: house;
+  white-space: nowrap;
+  padding: 10px 6rem;
+  letter-spacing: 4px;
+  animation-name: move;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*-----------PORTFOLIO-----------*/
+
+#headline {
+  margin-top: 100px;
+}
+
+/*-----------PROJEKTER-----------*/
+.animation-scroll {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .cards {
+  display: flex;
+}
+
+section .cards .text_card {
+  margin: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  section .cards {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.introduktion-wrapper-2,
+.introduktion-wrapper-3,
+.introduktion-wrapper-4,
+.introduktion-wrapper-5,
+.introduktion-wrapper-6 {
+  margin: 100px 0px 30px 0px;
+  padding: 80px 15px 80px 15px;
+}
+
+.introduktion-wrapper-2 {
+  background: #f2fedc;
+}
+
+.introduktion-wrapper-2 h3,
+.introduktion-wrapper-3 h3,
+.introduktion-wrapper-4 h3,
+.introduktion-wrapper-5 h3,
+.introduktion-wrapper-6 h3 {
+  color: black;
+}
+
+.introduktion-wrapper-3 {
+  background: #fbfaf0;
+}
+
+.introduktion-wrapper-4 {
+  background: #959366;
+}
+
+.introduktion-wrapper-5 {
+  background: #fbfaf0;
+}
+
+.introduktion-wrapper-6 {
+  background: #f9f871;
+}
+
+.introduktion-wrapper-2 h1,
+.introduktion-wrapper-3 h1,
+.introduktion-wrapper-4 h1,
+.introduktion-wrapper-5 h1,
+.introduktion-wrapper-6 h1 {
+  color: black;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.div_flex {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 24px 20px 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  color: black;
+}
+
+.div_flex p {
+  hyphens: auto;
+  line-height: 1.7rem;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  align-items: stretch;
+  border-bottom: 1.5px solid black;
+}
+
+.opgave {
+  width: 25%;
+  flex: 0 0 auto;
+  color: black;
+  font-weight: bold;
+}
+
+.con_3 {
+  margin: 50px 20px 30px 20px;
+}
+
+.con_3 p {
+  line-height: 1.7rem;
+  hyphens: auto;
+}
+
+.div_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.div_links a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.div_links a:hover,
+.back:hover {
+  text-decoration: underline;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  border: black 1px solid;
+}
+
+#scrollTopBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Styling til ankerpunktet på toppen */
+#top {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/*-----------CV-----------*/
+.cv {
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.column_3 {
+  margin: 100px 15px 50px 15px;
+}
+
+.navn h1,
+h4 {
+  font-family: "Inter", sans-serif;
+}
+
+.column_2 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.grid_col_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.kompetencer {
+  margin-bottom: 40px;
+}
+
+hr {
+  margin-top: 5px;
+}
+
+.line {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5rem;
+}
+
+.edu_con {
+  margin-bottom: 30px;
+}
+
+.software-evner {
+  display: flex;
+  flex-direction: column;
+}
+
+.evne {
+  margin-bottom: 15px;
+  margin-left: 130px;
+}
+
+.evne p {
+  margin: 5px 0;
+}
+
+.færdighedsbjælke {
+  width: 200px;
+  height: 15px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.niveau {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.niveau-80 {
+  width: 50%;
+  background-color: #002eff;
+}
+
+.niveau-90 {
+  width: 90%;
+  background-color: #002eff;
+}

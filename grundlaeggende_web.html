@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="index.html">Cecilie Jadach</a>
+            <nav>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="om_mig.html">Om mig</a>
+            </nav>
+            <button class="hamburger">
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="om_mig.html">Om mig</a>
+    </nav>
+    <a id="top"></a>
+    <main class="cv">
+        <div class="introduktion-wrapper-2" id="web">
+            <h1>Grundlæggende web</h1>
+            <h3>Projekt: Min computer</h3>
+        </div>
+        <div class="div_flex">
+            <div class="row">
+                <div class="opgave">
+                    <p>Opgave</p>
+                </div>
+                <div>
+                    <p>I dette tema fik vi til opgave, at udarbejde en website på fem sider, hvor layoutdiagremmer og
+                        materialer
+                        blev udleveret. Gennem temaet lærte jeg om designprincipper, farver, fonte, HTML, CSS, flex
+                        og grid. Nævnte begreber gjorde jeg brug af ved udarbejdelse af en websitet. Jeg brugte grid på
+                        alle fem
+                        sider samt flex på Komponenter siden. Dette gjorde jeg for at matche de wireframes, jeg var
+                        blevet givet i starten af temaet. Scroll ned for at læse
+                        mere detaljeret om mine designvalg, og hvordan jeg brugte grid og flex.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="opgave">
+                    <p>Opgaveløsning</p>
+                </div>
+                <div>
+                    <a href="https://ceciliejadach.dk/kea/02_web/01_website/website/index.html">Min computer</a>
+                </div>
+            </div>
+        </div>
+        <div class="con_3">
+            <h1>HTML, CSS, grid, flex, mediaquery og designprincipper</h1>
+            <p>Temaet startede med at vi blev præsenteret for designprincipper som farver, fonte og layout. Vi fik
+                digitale redskaber til at få inspiration til farver samt hjælp til, hvordan vi kunne downloade fonte fra
+                nettet. Herefter blev vi så småt introduceret til browsers, HTML, mappestruktur, CSS, grid, flex og
+                mediaquery. Vi fik i den forbindelse diverse grid opgaver, så vi kunne lære, hvordan vi skulle bruge
+                grid i den endeslige studiestartsprøve.</p>
+        </div>
+        <section class="animation-scroll">
+            <div class="image reveal">
+                <div class="cards">
+                    <div class="text_card">
+                        <img src="img/web/fontsquirrel.webp" alt="fontsquirrel">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/grid.webp" alt="grid">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/galleri_opgave.webp" alt="galleri opagve">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="con_3">
+            <h1>Brug af designprincipper, farver og fonte</h1>
+            <p>Opgaven lød på, at vi skulle skrive om vores computer valgte. I min tilgang til valg af farver, tog jeg
+                derfor udgangspunkt i den baggrund,
+                som jeg havde på min computer. Jeg valgte derfor en støvet lilla som
+                baggrund og en stærk
+                lyserrød og lilla til links og knapper. Formålet med var at skabe en tydeligt kontrast på hjemmesiden.
+            </p> <br>
+            <p>I valget af fonte foretrak jeg sans-serif, da der ikke var så meget tekst og teksten var primært kort på
+                siderne.
+                Jegfandt derfor sans-serif passende for læsebarheden</p> <br>
+            <p>Når det kommer til designprincipper, gjorde jeg brug af gestaltprincipperne, især loven om nærhed og
+                loven om lukkethed. Jeg implementerede loven om nærhed i forhold til mit galleri, mens jeg brugte loven
+                om lukkethed på forsiden samt på siderne "Min computer", "Operativsystemer" og "Komponenter". Disse
+                principper brugte jeg til at organisere elementerne på siderne og skabe en visuel sammenhæng mellem dem.
+            </p>
+        </div>
+        <section class="animation-scroll">
+            <div class="image reveal">
+                <div class="cards">
+                    <div class="text_card">
+                        <img src="img/web/farvevalg.webp" alt="farvevalg">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/galleri.webp" alt="galleri">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/operativsystemer.webp" alt="operativsystemer">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="con_3">
+            <h1>Brug af grid og flex</h1>
+            <p>Nedenfor ses eksempler på, hvordan jeg har integreret grid-layout på gallerisiden og flex-layout på
+                komponentersiden. I valget mellem de to layoutmetoder foretrak jeg grid til galleriet, da billederne
+                havde
+                faste størrelser og dermed en specifik placering i galleriet. Grid gav mig præcis kontrol over
+                billedernes
+                position i grid'et, hvilket var vigtigt for den ønskede visuelle struktur.</p> <br>
+
+            <p>På komponentersiden valgte jeg flex-layout for at opnå mere kontrol, især med muligheden for at tilgå det
+                sidste element (:last-child) uden at være afhængig af flexbox. Det gav mig større fleksibilitet til at
+                style
+                og manipulere det sidste element på siden uden at skulle bruge specifikke egenskaber fra
+                flexbox-modellen.</p><br>
+
+            <p>Grid var ideelt til at opdele layoutet i rækker og kolonner, mens flex var mere velegnet til at
+                organisere elementer i en enkelt dimension, såsom rækker eller kolonner, uden at give samme præcise
+                positionskontrol som grid.</p>
+        </div>
+        <section class="animation-scroll">
+            <div class="image reveal">
+                <div class="cards">
+                    <div class="text_card">
+                        <img src="img/web/galleri_html.webp" alt="galleri html">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/galleri_css.webp" alt="galleri css">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="animation-scroll">
+            <div class="image reveal">
+                <div class="cards">
+                    <div class="text_card">
+                        <img src="img/web/komponent_html.webp" alt="komponenter html">
+                    </div>
+                    <div class="text_card">
+                        <img src="img/web/komponent_css.webp" alt="komponenter css">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="div_links">
+            <a href="videosite.html"> &lt; Grundlæggende indhold - videosite</a>
+            <a href="grundlaeggende_ux.html">Grundlæggende UX/UI &gt;</a>
+        </div>
+        <a href="#top" id="scrollTopBtn" title="Til toppen">&#8593; Tilbage til top</a>
+    </main>
+    <footer>
+        <section>
+            <div class="footer-wrapper">
+                <div class="footer-headline">
+                    <h1>Cecilie Jadach</h1>
+                </div>
+                <div class="footer-content">
+                    <a href="#">Instagram &#10532;</a>
+                    <a href="#">LinkedIn &#10532;</a>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-2">
+                        <h1>Skal vi arbejde sammen? Kontakt mig!</h1>
+                        <h1>Skal vi arbejde sammen? Kontakt mig!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="java.js"></script>
+</body>
+
+</html>
