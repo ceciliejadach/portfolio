@@ -94,6 +94,12 @@
     margin: 0 200px;
   }
 
+  .color {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
   .con_1 h1 {
     font-size: 4rem;
   }
@@ -104,7 +110,7 @@
   }
 
   .con_3 {
-    margin: 0px 500px 30px 500px;
+    margin: 40px 500px 30px 500px;
   }
 
   .div_links {

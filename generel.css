@@ -285,7 +285,6 @@ nav a:hover {
 }
 
 .project_2 {
-  /* background-color: #ff007d; */
   background: #f2fedc;
   color: black;
   padding: 30px 15px;
@@ -298,9 +297,7 @@ nav a:hover {
 }
 
 .project_4 {
-  /* background-color: #002eff; */
   background-color: #959366;
-  /* color: white; */
   color: black;
   padding: 30px 15px;
 }
@@ -537,9 +534,14 @@ section .cards .text_card {
   margin: 50px 20px 30px 20px;
 }
 
-.con_3 p {
+.con_3 p,
+ul li {
   line-height: 1.7rem;
   hyphens: auto;
+}
+
+.color {
+  background: #fbfaf0;
 }
 
 .div_links {
