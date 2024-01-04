@@ -120,6 +120,10 @@
     margin: 50px 100px;
   }
 
+  .small img {
+    max-width: 400px;
+  }
+
   /* --------CV-------- */
   .col_container {
     margin: 200px 250px 100px 250px;
