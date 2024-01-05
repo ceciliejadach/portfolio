@@ -73,6 +73,11 @@
 
   /* --------PROJEKTER-------- */
 
+  .div_flex {
+    max-width: 1000px;
+    padding: 0;
+  }
+
   .introduktion-wrapper-2,
   .introduktion-wrapper-3,
   .introduktion-wrapper-4,

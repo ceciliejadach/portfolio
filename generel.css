@@ -281,34 +281,30 @@ nav a:hover {
   font-family: "Inter", sans-serif;
 }
 
-.project_2 {
-  background: #f2fedc;
-  color: black;
+.project_2,
+.project_3,
+.project_4,
+.project_5,
+.project_6 {
+  color: #050505;
   padding: 30px 15px;
 }
 
-.project_3 {
+.project_2 {
+  background: #f2fedc;
+}
+
+.project_3,
+.project_5 {
   background-color: #fbfaf0;
-  color: #050505;
-  padding: 30px 15px;
 }
 
 .project_4 {
-  background-color: #959366;
-  color: black;
-  padding: 30px 15px;
-}
-
-.project_5 {
-  background-color: #fbfaf0;
-  color: #050505;
-  padding: 30px 15px;
+  background-color: #f9f871;
 }
 
 .project_6 {
-  background-color: #f9f871;
-  color: #050505;
-  padding: 30px 15px;
+  background-color: #959366;
 }
 
 .project_2 h2,
@@ -470,20 +466,17 @@ section .cards .text_card {
   color: black;
 }
 
-.introduktion-wrapper-3 {
+.introduktion-wrapper-3,
+.introduktion-wrapper-6 {
   background: #fbfaf0;
 }
 
 .introduktion-wrapper-4 {
-  background: #959366;
+  background: #f9f871;
 }
 
 .introduktion-wrapper-5 {
-  background: #fbfaf0;
-}
-
-.introduktion-wrapper-6 {
-  background: #f9f871;
+  background: #959366;
 }
 
 .introduktion-wrapper-2 h1,
@@ -498,13 +491,10 @@ section .cards .text_card {
 
 .div_flex {
   display: flex;
-  width: 100%;
   max-width: 800px;
   margin: 50px auto;
   padding: 24px 20px 40px;
   flex-wrap: wrap;
-  align-items: flex-start;
-  color: black;
 }
 
 .div_flex p {
