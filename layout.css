@@ -145,6 +145,10 @@
     max-width: 400px;
   }
 
+  .bert_test {
+    max-height: 450px;
+  }
+
   /* --------CV-------- */
   .col_container {
     margin: 200px 250px 100px 250px;
