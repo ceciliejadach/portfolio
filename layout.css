@@ -1,7 +1,15 @@
 @media (min-width: 800px) {
   /* --------FORSIDE-------- */
   .marquee h1 {
-    font-size: 30rem;
+    font-size: 15rem;
+  }
+
+  /* Container til min tekst animation */
+  .hero-wrapper .marquee,
+  .marquee-wrapper .marquee-2 {
+    max-width: 1000px;
+    height: 40vh;
+    padding-top: 100px;
   }
 
   header .container {
@@ -9,8 +17,9 @@
   }
 
   .hero-figur-container {
-    width: 55vw;
-    height: 35.7vw;
+    width: 50vw;
+    height: 28.1vw;
+    margin-left: 650px;
   }
 
   .about-wrapper {
