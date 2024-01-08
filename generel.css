@@ -21,7 +21,9 @@ h2,
 h3,
 p,
 a,
-.con_3 h1 {
+.con_3 h1,
+h4,
+li {
   font-family: "Inter", sans-serif;
 }
 
@@ -219,20 +221,20 @@ nav a:hover {
   }
 }
 
-.hero-figur-container {
+/* .hero-figur-container {
   z-index: 1;
-  width: 70vw;
-  height: 31.5vw;
+  width: 40vw;
+  height: 31.6vw;
   align-items: flex-end;
   margin-left: 175px;
-  /* margin-right: auto; */
+  margin-right: auto;
   display: flex;
   position: absolute;
-  /* top: auto; */
-  /* bottom: 0%; */
+  top: auto;
+  bottom: 0%;
   left: 0%;
-  right: 0%;
-}
+  right: 20%;
+} */
 
 .headline_2_wrapper {
   z-index: 10;
@@ -591,19 +593,20 @@ ul li {
 }
 
 /*-----------CV-----------*/
-.cv {
-  background: white;
+/* .cv {
   padding-top: 10px;
   padding-bottom: 10px;
-}
+} */
 
-.column_3 {
+.column_2_1 {
   margin: 100px 15px 50px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.navn h1,
-h4 {
-  font-family: "Inter", sans-serif;
+.column_2_1 h1 {
+  font-family: house;
 }
 
 .column_2 {
@@ -617,10 +620,7 @@ h4 {
   gap: 30px;
 }
 
-.about {
-  margin-bottom: 40px;
-}
-
+.about,
 .kompetencer {
   margin-bottom: 40px;
 }
@@ -635,7 +635,6 @@ hr {
 }
 
 li {
-  font-family: "Inter", sans-serif;
   line-height: 1.5rem;
 }
 
@@ -650,7 +649,7 @@ li {
 
 .evne {
   margin-bottom: 15px;
-  margin-left: 130px;
+  align-self: center;
 }
 
 .evne p {
@@ -669,12 +668,37 @@ li {
   border-radius: 5px;
 }
 
-.niveau-80 {
-  width: 50%;
+.niveau-1 {
+  width: 20%;
   background-color: #002eff;
 }
 
-.niveau-90 {
+.niveau-2 {
   width: 90%;
+  background-color: #002eff;
+}
+
+.niveau-3 {
+  width: 40%;
+  background-color: #002eff;
+}
+
+.niveau-4 {
+  width: 80%;
+  background-color: #002eff;
+}
+
+.niveau-5 {
+  width: 40%;
+  background-color: #002eff;
+}
+
+.niveau-6 {
+  width: 30%;
+  background-color: #002eff;
+}
+
+.niveau-7 {
+  width: 25%;
   background-color: #002eff;
 }

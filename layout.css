@@ -15,12 +15,12 @@
   header .container {
     padding: 20px 30px;
   }
-
+  /* 
   .hero-figur-container {
-    width: 50vw;
+    width: 28vw;
     height: 28.1vw;
-    margin-left: 650px;
-  }
+    right: 25%;
+  } */
 
   .headline_2_wrapper {
     right: 4%;
@@ -163,10 +163,22 @@
     margin: 200px 250px 100px 250px;
   }
 
-  .column_3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  .column_2_1 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .column_2_1 img {
+    max-width: 300px;
+  }
+
+  .column_2_1 h1,
+  .column_2_1 h4 {
+    padding-left: 50px;
+  }
+
+  .column_2_1 h1 {
+    font-size: 2rem;
+    font-family: house;
   }
 
   .column_2 {
@@ -197,7 +209,7 @@
   }
 
   .evne {
-    margin-left: 0px;
+    align-self: flex-start;
   }
 
   /* --------PORTFOLIO-------- */
