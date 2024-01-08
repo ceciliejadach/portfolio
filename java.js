@@ -1,6 +1,9 @@
 const menu_btn = document.querySelector(".hamburger");
 const mobile_menu = document.querySelector(".mobile-nav");
 
+var reveals = document.querySelectorAll(".reveal");
+var image = document.getElementById("billede");
+
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
@@ -13,7 +16,6 @@ function sidenVises() {
 }
 
 window.addEventListener("scroll", reveal);
-var reveals = document.querySelectorAll(".reveal");
 
 function reveal() {
   console.log("reveal");
@@ -29,4 +31,10 @@ function reveal() {
       reveals[i].classList.remove("active");
     }
   }
+}
+
+function moveImage(event) {
+  image.style.display = "block";
+  image.style.left = event.clientX + "px";
+  image.style.top = event.clientY + "px";
 }

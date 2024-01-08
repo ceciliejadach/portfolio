@@ -187,17 +187,17 @@ nav a:hover {
 } */
 
 /* Container til min tekst animation */
-.hero-wrapper .marquee,
+/* .hero-wrapper .marquee,
 .marquee-wrapper .marquee-2 {
   display: flex;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
   overflow: hidden;
   margin-top: 150px;
   max-width: 350px;
-}
+} */
 
 /* Stil for h1 og animation */
-.marquee h1 {
+/* .marquee h1 {
   text-transform: uppercase;
   font-size: 6rem;
   font-family: house;
@@ -208,10 +208,10 @@ nav a:hover {
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
+} */
 
 /* Keyframe for min tekst animation */
-@keyframes move {
+/* @keyframes move {
   0% {
     transform: translateX(0);
   }
@@ -219,7 +219,7 @@ nav a:hover {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 /* .hero-figur-container {
   z-index: 1;
@@ -236,7 +236,7 @@ nav a:hover {
   right: 20%;
 } */
 
-.headline_2_wrapper {
+/* .headline_2_wrapper {
   z-index: 10;
   position: absolute;
   right: 4%;
@@ -245,6 +245,38 @@ nav a:hover {
 
 .headline_2_wrapper h2 {
   font-family: house;
+} */
+
+/* .hero_wrapper {
+  margin-top: 100px;
+  height: 50vh;
+  padding-top: 180px;
+} */
+
+.hero_headline_2 {
+  font-family: house;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero_headline_1 {
+  font-family: house;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 200px;
+}
+.hero_wrapper {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.billede {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  pointer-events: none; /* For at undgå forstyrrelser med musen */
 }
 
 .about-wrapper {
