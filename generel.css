@@ -221,8 +221,8 @@ nav a:hover {
 
 .hero-figur-container {
   z-index: 1;
-  width: 75vw;
-  height: 33.5vw;
+  width: 70vw;
+  height: 31.5vw;
   align-items: flex-end;
   margin-left: 175px;
   /* margin-right: auto; */
@@ -232,6 +232,17 @@ nav a:hover {
   /* bottom: 0%; */
   left: 0%;
   right: 0%;
+}
+
+.headline_2_wrapper {
+  z-index: 10;
+  position: absolute;
+  right: 4%;
+  bottom: 57%;
+}
+
+.headline_2_wrapper h2 {
+  font-family: house;
 }
 
 .about-wrapper {
