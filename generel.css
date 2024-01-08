@@ -599,7 +599,7 @@ hr {
 .færdighedsbjælke {
   width: 200px;
   height: 15px;
-  background-color: lightgray;
+  background-color: rgb(224, 224, 224);
   border-radius: 5px;
 }
 
@@ -610,35 +610,35 @@ hr {
 
 .niveau-1 {
   width: 20%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-2 {
   width: 90%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-3 {
   width: 40%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-4 {
   width: 80%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-5 {
   width: 40%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-6 {
   width: 30%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
 
 .niveau-7 {
   width: 25%;
-  background-color: #002eff;
+  background-color: #aeac9a;
 }
