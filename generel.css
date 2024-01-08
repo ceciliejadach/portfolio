@@ -386,16 +386,16 @@ nav a:hover {
   align-items: center;
 }
 
-section .cards {
+.cards {
   display: flex;
 }
 
-section .cards .text_card {
+.cards .text_card {
   padding: 10px;
 }
 
 @media (max-width: 900px) {
-  section .cards {
+  .cards {
     flex-direction: column;
     flex-flow: wrap;
     justify-content: center;
