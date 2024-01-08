@@ -179,84 +179,10 @@ nav a:hover {
 
 /*-----------FORSIDE-----------*/
 
-/* Stil af hero section  */
-/* body {
-  background-image: url(img/baggrund.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-/* Container til min tekst animation */
-/* .hero-wrapper .marquee,
-.marquee-wrapper .marquee-2 {
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
-  margin-top: 150px;
-  max-width: 350px;
-} */
-
-/* Stil for h1 og animation */
-/* .marquee h1 {
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-family: house;
-  white-space: nowrap;
-  padding: 0 3rem;
-  letter-spacing: 4px;
-  animation-name: move;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-} */
-
-/* Keyframe for min tekst animation */
-/* @keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-
-/* .hero-figur-container {
-  z-index: 1;
-  width: 40vw;
-  height: 31.6vw;
-  align-items: flex-end;
-  margin-left: 175px;
-  margin-right: auto;
-  display: flex;
-  position: absolute;
-  top: auto;
-  bottom: 0%;
-  left: 0%;
-  right: 20%;
-} */
-
-/* .headline_2_wrapper {
-  z-index: 10;
-  position: absolute;
-  right: 4%;
-  bottom: 57%;
-}
-
-.headline_2_wrapper h2 {
-  font-family: house;
-} */
-
-/* .hero_wrapper {
-  margin-top: 100px;
+.hero_wrapper {
+  position: relative;
+  width: 100%;
   height: 50vh;
-  padding-top: 180px;
-} */
-
-.hero_headline_2 {
-  font-family: house;
-  font-size: 3rem;
-  text-align: center;
 }
 
 .hero_headline_1 {
@@ -265,10 +191,11 @@ nav a:hover {
   text-align: center;
   padding-top: 200px;
 }
-.hero_wrapper {
-  position: relative;
-  width: 100%;
-  height: 50vh;
+
+.hero_headline_2 {
+  font-family: house;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .billede {
@@ -326,6 +253,10 @@ nav a:hover {
   font-family: "Inter", sans-serif;
 }
 
+.project-wrapper {
+  margin-bottom: 100px;
+}
+
 .project_2,
 .project_3,
 .project_4,
@@ -350,6 +281,7 @@ nav a:hover {
 
 .project_6 {
   background-color: #aeac9a;
+  margin-bottom: 100px;
 }
 
 .project_2 h2,
@@ -408,11 +340,9 @@ nav a:hover {
 
 .footer-headline {
   font-family: house;
-  background: white;
-  max-width: fit-content;
+  color: white;
   margin: 0 auto;
-  padding: 10px 20px;
-  border-radius: 10px;
+  font-size: 2rem;
 }
 
 .footer-content {
@@ -425,7 +355,6 @@ nav a:hover {
   background: white;
   border-radius: 5px 0px 5px 5px;
   color: black;
-  margin-left: 20px;
 }
 
 .footer-content a:hover {
@@ -433,21 +362,6 @@ nav a:hover {
   transition: 0.4ms;
   text-decoration: underline;
 }
-
-/* Stil for h1 og animation */
-/* .marquee-2 h1 {
-  font-size: 5rem;
-  background: white;
-  background: #f9f871;
-  font-family: house;
-  white-space: nowrap;
-  padding: 10px 6rem;
-  letter-spacing: 4px;
-  animation-name: move;
-  animation-duration: 11s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-} */
 
 /*-----------PORTFOLIO-----------*/
 
@@ -468,7 +382,6 @@ section .cards {
 }
 
 section .cards .text_card {
-  margin: 20px;
   padding: 10px;
 }
 
@@ -624,11 +537,6 @@ ul li {
 }
 
 /*-----------CV-----------*/
-/* .cv {
-  padding-top: 10px;
-  padding-bottom: 10px;
-} */
-
 .column_2_1 {
   margin: 100px 15px 50px 15px;
   display: grid;
@@ -654,6 +562,11 @@ ul li {
 .about,
 .kompetencer {
   margin-bottom: 40px;
+}
+
+.about p {
+  line-height: 1.5rem;
+  hyphens: auto;
 }
 
 hr {

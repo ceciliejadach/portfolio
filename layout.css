@@ -1,35 +1,9 @@
 @media (min-width: 800px) {
   /* --------FORSIDE-------- */
-  /* .marquee h1 {
-    font-size: 15rem;
-  } */
-
-  /* Container til min tekst animation */
-  /* .hero-wrapper .marquee,
-  .marquee-wrapper .marquee-2 {
-    max-width: 1000px;
-    height: 40vh;
-    padding-top: 100px;
-  } */
 
   header .container {
     padding: 20px 30px;
   }
-  /* 
-  .hero-figur-container {
-    width: 28vw;
-    height: 28.1vw;
-    right: 25%;
-  } */
-
-  /* .headline_2_wrapper {
-    right: 4%;
-    bottom: 35%;
-  }
-
-  .headline_2_wrapper h2 {
-    font-size: 5rem;
-  } */
 
   .hero_headline_1 {
     font-size: 10rem;
@@ -236,5 +210,10 @@
 
   .grid:hover {
     transform: scale(1.02);
+  }
+
+  /* --------FOOTER-------- */
+  .footer-headline {
+    font-size: 4rem;
   }
 }
