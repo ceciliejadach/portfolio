@@ -252,6 +252,10 @@ nav a:hover {
   font-size: 1.1rem;
 }
 
+.about-wrapper a:hover {
+  background-color: #f8f81e;
+}
+
 .project-headline {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -264,7 +268,7 @@ nav a:hover {
 }
 
 .project-wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .project_2,
