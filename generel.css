@@ -275,7 +275,6 @@ nav a:hover {
   display: none;
   position: absolute;
   width: 200px;
-  height: auto;
   pointer-events: none; /* For at undgå forstyrrelser med musen */
 }
 
@@ -350,7 +349,7 @@ nav a:hover {
 }
 
 .project_6 {
-  background-color: #959366;
+  background-color: #aeac9a;
 }
 
 .project_2 h2,
@@ -436,9 +435,9 @@ nav a:hover {
 }
 
 /* Stil for h1 og animation */
-.marquee-2 h1 {
+/* .marquee-2 h1 {
   font-size: 5rem;
-  /* background: white; */
+  background: white;
   background: #f9f871;
   font-family: house;
   white-space: nowrap;
@@ -448,7 +447,7 @@ nav a:hover {
   animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
+} */
 
 /*-----------PORTFOLIO-----------*/
 
@@ -522,7 +521,7 @@ section .cards .text_card {
 }
 
 .introduktion-wrapper-5 {
-  background: #959366;
+  background: #aeac9a;
 }
 
 .introduktion-wrapper-2 h1,
