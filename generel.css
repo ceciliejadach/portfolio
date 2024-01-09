@@ -46,22 +46,22 @@ header .container {
   border: lightgrey 1px solid;
 }
 
-/* Stil af navigations links */
+/* Stil af logo og navigations links */
 header .container a {
-  color: inherit;
+  color: black;
   font-size: 20px;
   text-decoration: none;
 }
 
+/* Underside links i header skal være i grid og have mellemrum mellem dem */
 nav {
   display: grid;
   grid-gap: 60px;
   grid-template-columns: repeat(2, auto);
-  color: black;
 }
 
+/* stil af links i burgermenu */
 nav a {
-  color: black;
   font-size: 20px;
   text-decoration: none;
 }
@@ -70,19 +70,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* hvis skærmens bredde er mindre end eller lig med 767 pixels vil nav element forsvinde */
 @media (max-width: 767px) {
   nav {
     display: none;
   }
 }
 
+/* hvis skærmens bredde er mindre end eller lig med 767 pixels vil containeren få padding på begge sider*/
 @media (max-width: 767px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
   }
 }
 
+/* logoet i header får fonten house */
 .logo {
   font-family: house;
 }
@@ -100,7 +102,7 @@ nav a:hover {
   z-index: 100;
 }
 
-/* Stil af hamburger streger */
+/* udseendet af de tre "bar"-elementer, som udgør hamburgerikonet defineres. Pseudo-elementer :before og :after" bruges til at skabe de vandrette streger i hamburgerikonet. */
 .hamburger .bar,
 .hamburger:after,
 .hamburger:before {
@@ -114,7 +116,9 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Hamburger streger som danner et kryds ved klik */
+/* streger roteres og flyttes ved hjælp af "transform"-egenskaben,
+når burgermenuen er aktiv,
+hvilket skaber et kryds-ikon  */
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
@@ -123,11 +127,12 @@ nav a:hover {
   transform: rotate(45deg) translate(-9px, -8px);
 }
 
+/* de vandrette bar streger  er usynlige, når burgermenuen er aktiv */
 .hamburger.is-active .bar {
   opacity: 0;
 }
 
-/* Side som slider ind ved klik på hamburger menu */
+/* Side som slider ind ved klik på burgermenu */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -141,6 +146,7 @@ nav a:hover {
   transition: 0.4s;
 }
 
+/* mobile-nav bliver hevet ind når man burgermenuen er aktiv  */
 .mobile-nav.is-active {
   left: 0;
 }
@@ -162,6 +168,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* hvis skærmens bredde er større end eller lig med 768 pixels så vil mobile-nav og burgermenu forsvinde */
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -173,7 +180,7 @@ nav a:hover {
 }
 
 /*-----------FORSIDE-----------*/
-
+/* hero section skal fylde 70% af viewport */
 .hero_wrapper {
   display: flex;
   align-items: center;
@@ -183,6 +190,7 @@ nav a:hover {
   background: #e9e9e9;
 }
 
+/* herobillede skal placeres ude til højre */
 .billede {
   position: absolute;
   width: 250px;
@@ -190,6 +198,7 @@ nav a:hover {
   right: 3%;
 }
 
+/* usynligt kasse over herobillede, som skal blive synligt ved hover */
 .billede-hover {
   position: absolute;
   top: 10%;
@@ -200,6 +209,7 @@ nav a:hover {
   transition: 2s;
 }
 
+/* ovenstående kasse bliver synligt */
 .billede-hover:hover {
   background: #e9e9e9;
   opacity: 0.8;
@@ -207,21 +217,22 @@ nav a:hover {
 
 .billede-hover::after {
   content: "";
-  position: absolute;
-  top: 0;
+  position: absolute; /*elementet skal positioneres i forhold til dets nærmeste positionerede forældreelement.*/
+  top: 0; /*Placerer efterligningselementet i øverste højre hjørne af det overordnede element.*/
   right: 0;
   background: #e9e9e9;
-  width: 100%;
-  height: 100%;
-  animation: showRight 1s ease forwards;
+  width: 100%; /*Gør elementet lige så bredt som dets forældreelement*/
+  height: 100%; /*Gør elementet lige så højt som dets forældreelement*/
+  animation: showRight 1s ease forwards; /*animation kaldet "showRight" på elementet. Animation varer 1 sekund, bruger en let transition ("ease") og fastholder den sidste tilstand af animationen*/
   animation-delay: 1.6s;
-  z-index: 100;
+  z-index: 100; /*stakrækkefølgen (z-index) for elementet*/
 }
 
 .hero-text {
   max-width: 300px;
 }
 
+/* stil af hero headline */
 .hero-text h1 {
   position: relative;
   font-family: house;
@@ -242,6 +253,7 @@ nav a:hover {
   animation-delay: 0.4s;
 }
 
+/* animation til at få kasser til at forsvinde mod højre */
 @keyframes showRight {
   100% {
     width: 0;
@@ -375,7 +387,6 @@ nav a:hover {
 }
 
 .project_content p {
-  font-size: 16px;
   margin-top: 20px;
   margin-bottom: 30px;
   line-height: 1.5rem;
@@ -418,41 +429,6 @@ nav a:hover {
 .project_content a:hover {
   background: black;
   color: white;
-}
-
-/*-----------FOOTER-----------*/
-.footer-wrapper {
-  text-align: center;
-  background: black;
-  padding-top: 50px;
-  min-height: 40vh;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
-}
-
-.footer-headline {
-  font-family: house;
-  color: white;
-  margin: 0 auto;
-  font-size: 2rem;
-}
-
-.footer-content {
-  margin-top: 70px;
-}
-
-.footer-content a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background: white;
-  border-radius: 5px 0px 5px 5px;
-  color: black;
-}
-
-.footer-content a:hover {
-  background: #d3f36b;
-  transition: 0.4ms;
-  text-decoration: underline;
 }
 
 /*-----------PORTFOLIO-----------*/
@@ -600,7 +576,7 @@ ul li {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
+  z-index: 20;
   font-size: 20px;
   text-decoration: none;
   padding: 10px;
@@ -734,4 +710,39 @@ hr {
 .niveau-7 {
   width: 25%;
   background-color: #d3f36b;
+}
+
+/*-----------FOOTER-----------*/
+.footer-wrapper {
+  text-align: center;
+  background: black;
+  padding-top: 50px;
+  min-height: 40vh;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.footer-headline {
+  font-family: house;
+  color: white;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.footer-content {
+  margin-top: 70px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px 0px 5px 5px;
+  color: black;
+}
+
+.footer-content a:hover {
+  background: #d3f36b;
+  transition: 0.4ms;
+  text-decoration: underline;
 }
