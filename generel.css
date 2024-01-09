@@ -1,3 +1,4 @@
+/*-----------GENERELT-----------*/
 * {
   padding: 0;
   margin: 0;
@@ -247,12 +248,12 @@ nav a:hover {
   }
 }
 
-.hero-text h3 {
+.hero-text h2 {
   position: relative;
   font-size: 1.5rem;
 }
 
-.hero-text h3::before {
+.hero-text h2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -505,14 +506,6 @@ nav a:hover {
   padding: 80px 15px 80px 15px;
 }
 
-.introduktion-wrapper-2 h3,
-.introduktion-wrapper-3 h3,
-.introduktion-wrapper-4 h3,
-.introduktion-wrapper-5 h3,
-.introduktion-wrapper-6 h3 {
-  color: black;
-}
-
 .introduktion-wrapper-2 {
   background: #eef5ce;
 }
@@ -535,9 +528,7 @@ nav a:hover {
 .introduktion-wrapper-4 h1,
 .introduktion-wrapper-5 h1,
 .introduktion-wrapper-6 h1 {
-  color: black;
   margin-bottom: 20px;
-  font-family: "Inter", sans-serif;
 }
 
 .div_flex {
