@@ -178,7 +178,7 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   height: 70vh;
-  padding: 0 5%;
+  padding: 0 3%;
   background: #e9e9e9;
 }
 
@@ -186,13 +186,13 @@ nav a:hover {
   position: absolute;
   width: 250px;
   top: 15%;
-  right: 5%;
+  right: 3%;
 }
 
 .billede-hover {
   position: absolute;
   top: 10%;
-  right: 5%;
+  right: 3%;
   width: 250px;
   height: 400px;
   background: transparent;
@@ -268,7 +268,6 @@ nav a:hover {
   position: relative;
   margin: 20px 0 70px;
   line-height: 1.5rem;
-  hyphens: auto;
 }
 
 .hero-text p::before {
@@ -348,14 +347,11 @@ nav a:hover {
 }
 
 .project-headline {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: white;
+  margin: 20px 10px;
 }
 
 .project-headline h1 {
   font-size: 2.5rem;
-  font-family: "Inter", sans-serif;
 }
 
 .project-wrapper {
@@ -379,8 +375,8 @@ nav a:hover {
 
 .project_content p {
   font-size: 16px;
-  margin: 20px 0;
-  hyphens: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
   line-height: 1.5rem;
 }
 
@@ -575,6 +571,10 @@ nav a:hover {
 
 .con_3 {
   margin: 50px 20px 30px 20px;
+}
+
+.con_3 a {
+  color: black;
 }
 
 .con_3 p,
