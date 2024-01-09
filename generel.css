@@ -423,7 +423,6 @@ hvilket skaber et kryds-ikon  */
   padding: 10px 20px;
   border-radius: 25px;
   border: #050505 1px solid;
-  font-size: 14px;
 }
 
 .project_content a:hover {
@@ -440,15 +439,6 @@ hvilket skaber et kryds-ikon  */
 }
 
 /*-----------PROJEKTER-----------*/
-
-.row a {
-  color: #050505;
-  text-decoration: none;
-}
-
-.row a:hover {
-  text-decoration: underline;
-}
 
 .animation-scroll {
   min-height: 50vh;
@@ -510,7 +500,7 @@ hvilket skaber et kryds-ikon  */
 .div_flex {
   display: flex;
   max-width: 800px;
-  margin: 50px auto;
+  margin: 50px auto 0;
   padding: 24px 20px 40px;
   flex-wrap: wrap;
 }
@@ -529,6 +519,16 @@ hvilket skaber et kryds-ikon  */
   border-bottom: 1.5px solid black;
 }
 
+.row a {
+  color: #050505;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.row a:hover {
+  text-decoration: underline;
+}
+
 .opgave {
   width: 25%;
   flex: 0 0 auto;
@@ -537,7 +537,7 @@ hvilket skaber et kryds-ikon  */
 }
 
 .con_3 {
-  margin: 50px 20px 30px 20px;
+  margin: 30px 20px 30px 20px;
 }
 
 .con_3 a {
@@ -564,7 +564,6 @@ ul li {
   text-decoration: none;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 
 .div_links a:hover,
