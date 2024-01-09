@@ -462,9 +462,21 @@ nav a:hover {
 
 #headline {
   margin-top: 100px;
+  margin-left: 20px;
+  font-size: 1.75rem;
 }
 
 /*-----------PROJEKTER-----------*/
+
+.row a {
+  color: #050505;
+  text-decoration: none;
+}
+
+.row a:hover {
+  text-decoration: underline;
+}
+
 .animation-scroll {
   min-height: 50vh;
   display: flex;
@@ -649,6 +661,10 @@ ul li {
   margin-bottom: 40px;
 }
 
+.kompetencer p {
+  font-weight: bold;
+}
+
 .about p,
 li {
   line-height: 1.5rem;
@@ -656,7 +672,7 @@ li {
 }
 
 hr {
-  margin-top: 5px;
+  margin: 5px 0;
 }
 
 .line {

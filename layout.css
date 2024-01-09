@@ -21,7 +21,7 @@
   /* størrelse og placering af den kasse som skal ligge ovenpå billedet */
   .billede-hover {
     top: 10%;
-    right: 10%;
+    right: 5%;
     width: 600px;
     height: 800px;
   }
@@ -79,13 +79,18 @@
   /* længde på teksten i projektkasserne  */
   .project_content p {
     max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  .project_content a {
+    font-size: 16px;
   }
 
   /* --------FOOTER-------- */
 
   /* højde på footer */
   .footer-wrapper {
-    min-height: 70vh;
+    min-height: 50vh;
   }
 
   /* stil af footer h2 */
@@ -98,13 +103,6 @@
   /* font størrelse på linket  */
   .footer-content a {
     font-size: 2rem;
-  }
-
-  /* stil af hover funktion over linket */
-  .footer-content a:hover {
-    background: #f9f871;
-    transition: 0.4ms;
-    text-decoration: underline;
   }
 
   /* --------PROJEKTER-------- */
@@ -236,10 +234,12 @@
   }
 
   /* --------PORTFOLIO-------- */
+
   .project-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin: 0 50px 50px;
   }
 
   .grid {
@@ -247,10 +247,15 @@
     padding-left: 20px;
     padding-right: 20px;
     transition: transform 0.3s; /*overgangseffekt */
+    margin: 0;
   }
 
   .grid:hover {
     transform: scale(1.02);
+  }
+
+  #headline {
+    margin: 130px 0px 50px 50px;
   }
 
   /* --------FOOTER-------- */
