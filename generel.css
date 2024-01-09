@@ -438,7 +438,7 @@ hvilket skaber et kryds-ikon  */
   font-size: 1.75rem;
 }
 
-/*-----------PROJEKTER-----------*/
+/*-----------OPGAVER-----------*/
 
 .animation-scroll {
   min-height: 50vh;
@@ -546,7 +546,7 @@ hvilket skaber et kryds-ikon  */
 
 .con_3 p,
 ul li {
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   hyphens: auto;
 }
 
