@@ -1,21 +1,24 @@
 @media (min-width: 800px) {
   /* --------FORSIDE-------- */
 
+  /* padding på navigation container */
   header .container {
     padding: 20px 30px;
   }
 
+  /* hero section fylder hele viewport (fylder hele skærmen)   */
   .hero_wrapper {
-    height: 100vh;
-    padding: 0 10%;
+    height: 100vh; /*viewport height sat til 100, så det fylder ikke skærmen */
+    padding: 0 5%; /*luft på hver side*/
   }
 
+  /* størrelsen og placering af hero billede */
   .billede {
     width: 600px;
-    top: 10%;
-    right: 10%;
+    top: 10%; /*10% fra toppen af skærmen*/
+    right: 5%; /*5% procent fra højre side af skærmen*/
   }
-
+  /* størrelse og placering af den kasse som skal ligge ovenpå billedet */
   .billede-hover {
     top: 10%;
     right: 10%;
@@ -23,42 +26,42 @@
     height: 800px;
   }
 
+  /* størrelse på text container  */
   .hero-text {
     max-width: 650px;
   }
 
+  /* stil af hero sektion h1 */
   .hero-text h1 {
     font-size: 6rem;
     font-weight: 700;
   }
 
+  /* stil af hero sektion h3 */
   .hero-text h3 {
     font-size: 2rem;
   }
 
+  /* stil af hero sektion p */
   .hero-text p {
     margin: 20px 0 40px;
   }
 
+  /* knapperne skal være på linje med resten af teksten  */
   .hero_wrapper .btn-box {
     margin-left: 0;
   }
 
-  .about-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 40px 30px 0 30px;
-    height: 45vh;
-  }
+  /* Temaer og projekter */
 
-  .about-wrapper a {
-    width: fit-content;
-  }
-
+  /* stil af h1 */
   .project-headline h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
+    margin-left: 180px;
+    margin-top: 30px;
   }
 
+  /* projekt kasserne skal deles op i to, hvor der på den ene side skal være billede og anden side tekst */
   .project_2,
   .project_3,
   .project_4,
@@ -67,34 +70,37 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    padding-left: 200px;
-    padding-right: 200px;
-    min-height: 70vh;
-    align-items: center;
+    padding-left: 100px;
+    min-height: 70vh; /*fylder 70% af viewport height*/
+    align-items: center; /*elementerne placeres i midten af boksen*/
+    margin: 50px 200px;
   }
 
-  .project_2 p,
-  .project_3 p,
-  .project_4 p,
-  .project_5 p,
-  .project_6 p {
+  /* længde på teksten i projektkasserne  */
+  .project_content p {
     max-width: 500px;
   }
 
+  /* --------FOOTER-------- */
+
+  /* højde på footer */
   .footer-wrapper {
     min-height: 70vh;
   }
 
+  /* stil af footer h2 */
   .footer-headline {
     font-size: 6rem;
     padding: 30px 40px;
     margin-top: 70px;
   }
 
+  /* font størrelse på linket  */
   .footer-content a {
     font-size: 2rem;
   }
 
+  /* stil af hover funktion over linket */
   .footer-content a:hover {
     background: #f9f871;
     transition: 0.4ms;
@@ -103,11 +109,7 @@
 
   /* --------PROJEKTER-------- */
 
-  .div_flex {
-    max-width: 1000px;
-    padding: 0;
-  }
-
+  /* stil af overskrift boks  */
   .introduktion-wrapper-2,
   .introduktion-wrapper-3,
   .introduktion-wrapper-4,
@@ -121,7 +123,7 @@
   .introduktion-wrapper-4 h1,
   .introduktion-wrapper-5 h1,
   .introduktion-wrapper-6 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .introduktion-wrapper-2 h3,
@@ -129,21 +131,25 @@
   .introduktion-wrapper-4 h3,
   .introduktion-wrapper-5 h3,
   .introduktion-wrapper-6 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  .animation-scroll {
-    margin: 0 200px;
+  /* max bredde på hvor meget temabeskivelse kasse på fylde  */
+  .div_flex {
+    max-width: 1000px;
+    padding: 0;
   }
 
+  /* farve på specifik container på siden */
   .color {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 30px;
   }
 
+  /* størrelse på overskrift til afsnit i projekterne */
   .con_1 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .con_2 {
@@ -160,6 +166,11 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 50px 100px;
+    font-size: 1.5rem;
+  }
+
+  .animation-scroll {
+    margin: 0 200px;
   }
 
   .small {

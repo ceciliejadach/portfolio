@@ -21,22 +21,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* .scroll {
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range-start: entry 50%;
-  animation-range-end: cover 50%;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 /*-----------NAVIGATION-----------*/
 
 /* Placering af header  */
@@ -195,6 +179,7 @@ nav a:hover {
   justify-content: space-between;
   height: 70vh;
   padding: 0 5%;
+  background: #e9e9e9;
 }
 
 .billede {
@@ -209,13 +194,13 @@ nav a:hover {
   top: 10%;
   right: 5%;
   width: 250px;
-  height: 500px;
+  height: 400px;
   background: transparent;
   transition: 2s;
 }
 
 .billede-hover:hover {
-  background: white;
+  background: #e9e9e9;
   opacity: 0.8;
 }
 
@@ -224,7 +209,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #e9e9e9;
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
@@ -249,7 +234,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #e9e9e9;
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
@@ -272,7 +257,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #e9e9e9;
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
@@ -291,7 +276,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #e9e9e9;
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
@@ -314,7 +299,7 @@ nav a:hover {
   align-items: center;
   width: 240px;
   height: 100%;
-  font-size: 19px;
+  font-size: 16px;
   border: solid black 2px;
   border-radius: 25px;
   text-decoration: none;
@@ -330,7 +315,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #e9e9e9;
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
@@ -339,7 +324,7 @@ nav a:hover {
 }
 
 .btn-box a:nth-child(1) {
-  background: #ffff0f;
+  background: #d3f36b;
 }
 
 .btn-box a:hover {
@@ -362,47 +347,6 @@ nav a:hover {
   width: 100%;
 }
 
-.about-wrapper {
-  z-index: 1;
-  min-height: 40vh;
-  color: #fff;
-  background-color: #050505;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
-  margin-top: 100px;
-  padding: 0 15px 30px 15px;
-}
-
-.about-headline {
-  color: white;
-  font-size: 2.5rem;
-  padding-top: 30px;
-  font-family: "Inter", sans-serif;
-}
-
-.about-content p {
-  color: white;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  line-height: 2rem;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  hyphens: auto;
-}
-
-.about-wrapper a {
-  text-decoration: none;
-  color: black;
-  background-color: #f9f871;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 1.1rem;
-}
-
-.about-wrapper a:hover {
-  background-color: #f8f81e;
-}
-
 .project-headline {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -423,68 +367,58 @@ nav a:hover {
 .project_4,
 .project_5,
 .project_6 {
-  color: #050505;
+  margin: 30px 15px;
   padding: 30px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #bcbcbc;
+}
+
+.project_content {
+  max-width: 550px;
+}
+
+.project_content p {
+  font-size: 16px;
+  margin: 20px 0;
+  hyphens: auto;
+  line-height: 1.5rem;
 }
 
 .project_2 {
-  background: #f2fedc;
+  background: #eef5ce;
 }
 
 .project_3,
 .project_5 {
-  background-color: #fbfaf0;
+  background-color: #f7f6f0;
 }
 
 .project_4 {
-  background-color: #f9f871;
+  background-color: #d3f36b;
 }
 
 .project_6 {
-  background-color: #aeac9a;
+  background-color: #aaad9b;
   margin-bottom: 100px;
 }
 
-.project_2 h2,
-.project_3 h2,
-.project_4 h2,
-.project_5 h2,
-.project_6 h2 {
-  font-size: 2rem;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.project_content h2 {
+  font-size: 1.75rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.project_2 p,
-.project_3 p,
-.project_4 p,
-.project_5 p,
-.project_6 p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  /* line-height: 2rem; */
-  hyphens: auto;
-}
-
-.project_2 a,
-.project_3 a,
-.project_4 a,
-.project_5 a,
-.project_6 a {
+.project_content a {
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 10px 20px;
   border-radius: 25px;
   border: #050505 1px solid;
-  font-size: 1.1rem;
+  font-size: 14px;
 }
 
-.project_2 a:hover,
-.project_3 a:hover,
-.project_4 a:hover,
-.project_5 a:hover,
-.project_6 a:hover {
+.project_content a:hover {
   background: black;
   color: white;
 }
@@ -519,7 +453,7 @@ nav a:hover {
 }
 
 .footer-content a:hover {
-  background: #f9f871;
+  background: #d3f36b;
   transition: 0.4ms;
   text-decoration: underline;
 }
@@ -563,10 +497,6 @@ nav a:hover {
   padding: 80px 15px 80px 15px;
 }
 
-.introduktion-wrapper-2 {
-  background: #f2fedc;
-}
-
 .introduktion-wrapper-2 h3,
 .introduktion-wrapper-3 h3,
 .introduktion-wrapper-4 h3,
@@ -575,17 +505,21 @@ nav a:hover {
   color: black;
 }
 
+.introduktion-wrapper-2 {
+  background: #eef5ce;
+}
+
 .introduktion-wrapper-3,
 .introduktion-wrapper-6 {
-  background: #fbfaf0;
+  background: #f7f6f0;
 }
 
 .introduktion-wrapper-4 {
-  background: #f9f871;
+  background: #d3f36b;
 }
 
 .introduktion-wrapper-5 {
-  background: #aeac9a;
+  background: #aaad9b;
 }
 
 .introduktion-wrapper-2 h1,
@@ -638,7 +572,7 @@ ul li {
 }
 
 .color {
-  background: #fbfaf0;
+  background: #f7f6f0;
 }
 
 .div_links {
@@ -762,35 +696,35 @@ hr {
 
 .niveau-1 {
   width: 20%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-2 {
   width: 90%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-3 {
   width: 40%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-4 {
   width: 80%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-5 {
   width: 40%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-6 {
   width: 30%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
 
 .niveau-7 {
   width: 25%;
-  background-color: #aeac9a;
+  background-color: #d3f36b;
 }
