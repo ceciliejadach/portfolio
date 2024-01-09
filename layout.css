@@ -89,26 +89,7 @@
     font-size: 16px;
   }
 
-  /* --------FOOTER-------- */
-
-  /* højde på footer */
-  .footer-wrapper {
-    min-height: 50vh;
-  }
-
-  /* stil af footer h2 */
-  .footer-headline {
-    font-size: 6rem;
-    padding: 30px 40px;
-    margin-top: 70px;
-  }
-
-  /* font størrelse på linket  */
-  .footer-content a {
-    font-size: 2rem;
-  }
-
-  /* --------PROJEKTER-------- */
+  /* --------OPGAVER-------- */
 
   /* stil af overskrift boks  */
   .introduktion-wrapper-2,
@@ -262,7 +243,20 @@
   }
 
   /* --------FOOTER-------- */
+  /* højde på footer */
+  .footer-wrapper {
+    min-height: 50vh;
+  }
+
+  /* stil af footer h2 */
   .footer-headline {
     font-size: 4rem;
+    padding: 30px 40px;
+    margin-top: 70px;
+  }
+
+  /* font størrelse på linket  */
+  .footer-content a {
+    font-size: 2rem;
   }
 }
