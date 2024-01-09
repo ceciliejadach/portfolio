@@ -224,7 +224,7 @@ hvilket skaber et kryds-ikon  */
   width: 100%; /*Gør elementet lige så bredt som dets forældreelement*/
   height: 100%; /*Gør elementet lige så højt som dets forældreelement*/
   animation: showRight 1s ease forwards; /*animation kaldet "showRight" på elementet. Animation varer 1 sekund, bruger en let transition ("ease") og fastholder den sidste tilstand af animationen*/
-  animation-delay: 1.6s;
+  animation-delay: 1.4s;
   z-index: 100; /*stakrækkefølgen (z-index) for elementet*/
 }
 
@@ -250,7 +250,7 @@ hvilket skaber et kryds-ikon  */
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 /* animation til at få kasser til at forsvinde mod højre */
@@ -274,7 +274,7 @@ hvilket skaber et kryds-ikon  */
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
 }
 
 .hero-text p {
@@ -292,7 +292,7 @@ hvilket skaber et kryds-ikon  */
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 .hero_wrapper .btn-box {
@@ -331,7 +331,7 @@ hvilket skaber et kryds-ikon  */
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.1s;
   z-index: 2;
 }
 
