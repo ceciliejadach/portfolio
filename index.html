@@ -37,14 +37,29 @@
     <a id="top"></a>
     <main>
         <section>
-            <div class="hero_wrapper " onmousemove="moveImage(event)">
-                <h1 class="hero_headline_1">Cecilie Jadach</h1>
-                <h2 class="hero_headline_2">Portfolio</h2>
-                <img src="img/close_up_hero.webp" class="billede" id="billede" alt="Billede" loading="lazy" width="300"
+            <div class="hero_wrapper">
+                <div class="hero-text">
+                    <h1>Cecilie Jadach</h1>
+                    <h3>Portfolio</h3>
+                    <p>Ex-fysioterapeut med ny
+                        passion for webdesign og programmering. Udover at jeg stræber efter at
+                        forbedre mine tekniske evner,
+                        kan jeg fortælle, at jeg har vundet bronzemedalje i VM i vintersvømning 2023, jeg skriver en
+                        top-10-to-do liste for det nye år, og jeg har sjovt nok stadig en mælketand.</p>
+                    <div class="btn-box">
+                        <a href="om_mig.html">Læs mere</a>
+                        <a href="index.html#portfolio">Scroll &darr; for portfolio</a>
+                    </div>
+                </div>
+
+                <img src="img/hero_close_up.webp" class="billede" alt="close up portræt" loading="lazy" width="300"
                     height="400">
+
+
+                <span class="billede-hover"></span>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div class="about-wrapper scroll">
                 <div class="about-headline">
                     <h1>Hvis portfolio scroller du igennem?</h1>
@@ -59,9 +74,9 @@
                     <a class="about-btn" href="om_mig.html">Læs mere</a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section>
-            <div class="project-headline scroll">
+            <div class="project-headline" id="portfolio">
                 <h1>&#8630;Temaer og projekter</h1>
             </div>
             <div class="project_2 scroll">

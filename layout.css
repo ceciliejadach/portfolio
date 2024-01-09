@@ -6,20 +6,42 @@
   }
 
   .hero_wrapper {
-    height: 65vh;
-  }
-
-  .hero_headline_1 {
-    font-size: 10rem;
-    padding-top: 300px;
-  }
-
-  .hero_headline_2 {
-    font-size: 5rem;
+    height: 100vh;
+    padding: 0 10%;
   }
 
   .billede {
-    width: 300px;
+    width: 600px;
+    top: 10%;
+    right: 10%;
+  }
+
+  .billede-hover {
+    top: 10%;
+    right: 10%;
+    width: 600px;
+    height: 800px;
+  }
+
+  .hero-text {
+    max-width: 650px;
+  }
+
+  .hero-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  .hero-text h3 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    margin: 20px 0 40px;
+  }
+
+  .hero_wrapper .btn-box {
+    margin-left: 0;
   }
 
   .about-wrapper {

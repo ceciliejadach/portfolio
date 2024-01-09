@@ -21,7 +21,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.scroll {
+/* .scroll {
   animation: fade linear both;
   animation-timeline: view();
   animation-range-start: entry 50%;
@@ -35,7 +35,7 @@ body {
   to {
     opacity: 1;
   }
-}
+} */
 
 /*-----------NAVIGATION-----------*/
 
@@ -190,29 +190,176 @@ nav a:hover {
 /*-----------FORSIDE-----------*/
 
 .hero_wrapper {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-}
-
-.hero_headline_1 {
-  font-family: house;
-  font-size: 5rem;
-  text-align: center;
-  padding-top: 200px;
-}
-
-.hero_headline_2 {
-  font-family: house;
-  font-size: 3rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  padding: 0 5%;
 }
 
 .billede {
-  display: none;
   position: absolute;
-  width: 200px;
-  pointer-events: none; /* For at undgå forstyrrelser med musen */
+  width: 250px;
+  top: 15%;
+  right: 5%;
+}
+
+.billede-hover {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 250px;
+  height: 500px;
+  background: transparent;
+  transition: 2s;
+}
+
+.billede-hover:hover {
+  background: white;
+  opacity: 0.8;
+}
+
+.billede-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.6s;
+  z-index: 100;
+}
+
+.hero-text {
+  max-width: 300px;
+}
+
+.hero-text h1 {
+  position: relative;
+  font-family: house;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.hero-text h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+.hero-text h3 {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.hero-text h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.hero-text p {
+  position: relative;
+  margin: 20px 0 70px;
+  line-height: 1.5rem;
+  hyphens: auto;
+}
+
+.hero-text p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.hero_wrapper .btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 50px;
+  margin-left: 35px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 100%;
+  font-size: 19px;
+  border: solid black 2px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.hero_wrapper .btn-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
+  z-index: 2;
+}
+
+.btn-box a:nth-child(1) {
+  background: #ffff0f;
+}
+
+.btn-box a:hover {
+  color: white;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
 }
 
 .about-wrapper {
